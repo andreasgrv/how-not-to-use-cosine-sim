@@ -1,2 +1,3 @@
 # cosine-sim-not-informative
-Code with examples from "Cosine Similarity of Unembeddings is not Informative of Model Behaviour for Softmax Classifiers"
+Code with examples relating to the article "Why not to use Cosine Similarity between Label Representations" by Beatrix M. G. Nielsen. 
+Link coming. 
