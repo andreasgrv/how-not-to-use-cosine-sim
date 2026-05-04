@@ -52,7 +52,7 @@ def three_models_diff_cosines_ex():
     fig.tight_layout()
 
     ax.legend(fontsize= font_size-10)
-    fig.show()
+    # fig.show()
 
     dot_products = np.matmul(embeddings, np.transpose(original_unembeddings))
     emb_labels = np.argmax(dot_products, axis=1)
@@ -74,7 +74,7 @@ def three_models_diff_cosines_ex():
 
     fig.tight_layout()
 
-    fig.show()
+    # fig.show()
 
 
     # Plot unembeddings of model where unembeddings for labels 0 and 1 have cosine -1
@@ -104,7 +104,7 @@ def three_models_diff_cosines_ex():
     fig.tight_layout()
 
     ax.legend(fontsize= font_size-10)
-    fig.show()
+    # fig.show()
 
     dot_products_model_2 = np.matmul(embeddings, np.transpose(v_minus_1_unembeddings))
     emb_labels_model_2 = np.argmax(dot_products_model_2, axis=1)
@@ -139,7 +139,7 @@ def three_models_diff_cosines_ex():
     fig.tight_layout()
 
     ax.legend(fontsize= font_size-10)
-    fig.show()
+    # fig.show()
 
     dot_products_model_3 = np.matmul(embeddings, np.transpose(v_1_unembeddings))
     emb_labels_model_3 = np.argmax(dot_products_model_3, axis=1)
@@ -259,4 +259,13 @@ def centered_fix_length_unembeddings_diff_cosines_ex():
     fig.tight_layout()
 
     ax.legend(fontsize= font_size-10)
-    fig.show()
+    # fig.show()
+
+
+if __name__ == "__main__":
+    three_models_diff_cosines_ex()
+    plt.show()
+    centered_unembeddings_diff_cosines_ex()
+    plt.show()
+    centered_fix_length_unembeddings_diff_cosines_ex()
+    plt.show()
